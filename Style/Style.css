@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Imagenes/pexels-adrien-olichon-2387793.jpg');/*Fondo de pantalla para la web*/
+    background-size: cover; /* Para cubrir todo el tamaño del área */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat; /* Para que no se repita la imagen */
+}
+p{
+  color:aliceblue;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*CABECERA DE LA WEB*/
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    background-color: #c7c2c2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*CAMBIAR EL ESTILO DE LOS BOTONES*/
+nav ul li button {
+  background: linear-gradient(45deg, #333333, #666666, #999999);
+  border: none;
+  color: #fff;
+  padding: 10px 20px; /* Aumentar el espacio de clic */
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  color: #ff0000; /* Cambiar el color al pasar el ratón */
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*AJUSTAR EL CONTENIDO DE LA WEB*/
+main {
+    margin-top: 60px;
+}
+.centrado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenido {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*IMAGENES QUE HACEN EL HOVER PARA CAMBIARSE POR LAS OTRAS*/
+.cambio-imagen:hover {
+    content: url('../Imagenes/gtr-r34\ back.jpg');  
+    cursor: pointer;
+  }
+
+.cambio-imagen1:hover {
+    content: url('../Imagenes/mcp1.jpg'); 
+    cursor: pointer;
+  }
+
+.cambio-imagen2:hover {
+    content: url('../Imagenes/f40\ back.jpg');
+    cursor: pointer;
+  }
+
+  .cambio-imagen3:hover {
+    content: url('../Imagenes/chiron.jpg');
+    cursor: pointer;
+  }
+ 
+/*PONER LAS IMAGENES*/
+.cambio-imagen,
+.cambio-imagen1,
+.cambio-imagen2,
+.cambio-imagen3 {
+    display: inline-block; /* Cambiar a inline-block para que aparezcan una al lado de la otra */
+    margin-right: 10px; /* Aumentar un poco el margen entre las imágenes */
+    width: 200px; /* Ancho deseado */
+    height: auto; /* Altura ajustada automáticamente */
+    text-align: center; /* Alinear contenido dentro del contenedor */
+    
+}
+.image-container {
+  display: flex; /* Utilizar flexbox */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  margin-top: 20px; /* Margen superior opcional */
+}
+  
+/*--------------------------------------------------------------------------------------------*/
+
+/*ICONO PARA REGISTRARSE*/
+.register-icon {
+  position: absolute;
+  top: 18%;
+  right: 10px;
+  transform: translateY(-50%);
+  position: fixed;
+}
+
+.register-icon img {
+  width: 100px; /* Ajusta el tamaño del icono según sea necesario */
+  border-radius: 50%; /* Hace que el icono sea redondo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra al icono */
+}
+/*--------------------------------------------------------------------------------------------*/
+/*AJUSTAR EL TEXTO EN EL CENTRO Y DEJANDO ESPACIO EN LA PARTE SUPERIOR DE LA WEB*/
+.header-content {
+  padding: 100px;
+   background-color: rgba(255, 255, 255, 0.096); /* Fondo semi-transparente para el desenfoque */
+  }
+
+.header-content p {
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+/*CONFIGURACIÓN DEL FORM*/
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  
+  
+}
+
+.login-form {
+  background-color: #ffffff9f;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ffffff96;
+  border-radius: 5px;  
+  box-shadow: 0 0 20px rgb(255, 255, 255);
+}
+/*CONFIGURACIÓN DEL BOTON DEL FORM*/
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
